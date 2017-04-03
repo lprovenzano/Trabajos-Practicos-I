@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1491179461 source:c:\users\fofy\documents\github\trabajos-practicos-i\tp 1\funciones.c
+
+1491178817 source:c:\users\fofy\documents\github\trabajos-practicos-i\tp 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1491071219 c:\users\fofy\documents\github\trabajos-practicos-i\tp 1\funciones.h
+
