@@ -29,8 +29,8 @@ float calculo(int a, float b, float c)
         divide(b, c);
         factorial(b);
         break;
-    default:
-        return 0;
+    case 9:
+        exit(0);
     }
 }
 
@@ -79,7 +79,7 @@ float divide(float a, float b)
     float total;
     if(b==0)
     {
-        printf("\n ------------------------ \n ERROR! Operacion invalida \n \n");
+        printf("\n \n ------------------------ \n ERROR! \n Operacion invalida \n \n");
         return 0;
     }
     total = a/b;
@@ -87,16 +87,23 @@ float divide(float a, float b)
     return total;
 }
 
-//DEBE SER INT, REHACER
 float factorial(float a)
 {
     float acumulador;
     float antecesores;
-    acumulador = 0;
-    for(antecesores=a;antecesores>0;antecesores--)
+    acumulador = 1;
+    if (a>=0)
     {
-        acumulador += antecesores;
+        for(antecesores=a;antecesores>0;antecesores--)
+        {
+            acumulador *= antecesores;
+        }
+        printf("\n ------------------------ \n Factorial de %.0f: %.0f \n \n", a,acumulador);
+        return acumulador;
     }
-    printf("\n ------------------------ \n Factorial de %.4f: %.4f \n \n", a,acumulador);
-    return acumulador;
+    else
+    {
+        printf("\n \n ------------------------ \n ERROR! Operacion invalida \n \n");
+        return 0;
+    }
 }

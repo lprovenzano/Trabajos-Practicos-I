@@ -9,6 +9,8 @@ int main()
     int operador;
     char respuesta;
 
+    num1 = 0;
+    num2 = 0;
     do
     {
     system("CLS");
@@ -37,7 +39,7 @@ int main()
                 num2 = segundoNumero();
             break;
         }
-    }while(operador<=0 || operador==1 || operador==2 || operador>8);
+    }while(operador<=0 || operador==1 || operador==2 || operador>9);
 
     calculo(operador, num1, num2);
 
@@ -45,6 +47,8 @@ int main()
     respuesta = tolower(getch());
 
     }while(respuesta == 's');
+
+    system("CLS");
 
     return 0;
 }
