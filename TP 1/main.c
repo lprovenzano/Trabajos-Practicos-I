@@ -1,47 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include "funciones.h"
 
 int main()
 {
-    float primerNumero, segundoNumero;
+    float num1, num2;
     int operador;
     char respuesta;
 
     do
     {
     system("CLS");
-    printf("\n \n BIENVENIDO \n ------------------------ \n");
-
-    printf("\n Ingrese un numero (A): ");
-    scanf("%f", &primerNumero);
-
-    printf("\n Ingrese otro numero (B): ");
-    scanf("%f", &segundoNumero);
-
-    system("CLS");
 
     do
     {
-        menu();
-        printf("\n \n RESPUESTA: ");
+        system("CLS");
+        printf("\n \n MENU \n ------------------------ \n");
+        printf("\n 1 - INGRESAR EL 1ER OPERANDO (A=%f)\n 2 - INGRESAR EL 2DO OPERANDO (B=%f) \n 3 - SUMA (A+B) \n 4 - RESTA (A-B) \n 5 - MULTIPLICACION (A*B) \n 6 - DIVISION (A/B) \n 7 - FACTORIAL (A!) \n 8 - TODAS LAS OPERACIONES \n\n 9 - SALIR", num1, num2);
+        printf("\n \n OPCION: ");
         scanf("%d", &operador);
         system("CLS");
-        menu();
-        if(operador<=0 || operador>6)
+        printf("\n \n MENU \n ------------------------ \n");
+        printf("\n 1 - INGRESAR EL 1ER OPERANDO (A=%f)\n 2 - INGRESAR EL 2DO OPERANDO (B=%f) \n 3 - SUMA (A+B) \n 4 - RESTA (A-B) \n 5 - MULTIPLICACION (A*B) \n 6 - DIVISION (A/B) \n 7 - FACTORIAL (A!) \n 8 - TODAS LAS OPERACIONES \n\n 9 - SALIR", num1, num2);
+        if(operador<=0 || operador>8)
         {
             system("CLS");
         }
 
-    }while(operador<=0 || operador>6);
+        switch (operador)
+        {
+            case 1:
+                num1 = primerNumero();
+            break;
+            case 2:
+                num2 = segundoNumero();
+            break;
+        }
+    }while(operador<=0 || operador==1 || operador==2 || operador>8);
 
-    calculo(operador, primerNumero, segundoNumero);
+    calculo(operador, num1, num2);
 
-    printf("\n \n Desea operar de nuevo? (s|n): ");
-    respuesta = getch();
+    printf("\n Desea operar de nuevo? (s|n): ");
+    respuesta = tolower(getch());
 
     }while(respuesta == 's');
 
     return 0;
-
 }

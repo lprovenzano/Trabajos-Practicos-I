@@ -2,12 +2,14 @@
 #define FUNCIONES_H_INCLUDED
 
 //Documentar
-void menu();
-int calculo(int a, float b, float c);
-int suma(float a, float b);
-int resta(float a, float b);
-int multiplica(float a, float b);
-int divide(float a, float b);
-int factorial(float a);
+float menu(float a, float b);
+float primerNumero();
+float segundoNumero();
+float calculo(int a, float b, float c);
+float suma(float a, float b);
+float resta(float a, float b);
+float multiplica(float a, float b);
+float divide(float a, float b);
+float factorial(float a);
 
 #endif
