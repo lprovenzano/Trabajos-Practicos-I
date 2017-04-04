@@ -1,3 +1,16 @@
+/*******************************************************************
+*   Programa:Calculadora | Trabajo Práctico N° 1.
+*
+*   Objetivo:
+*   Ingresar dos números (A^B) y realizar operaciones de
+*   suma, resta, multiplicacion, división y factorial.
+*
+*
+*   Version: 0.1 del 04 de abril de 2017.
+*   Autor: Luca Provenzano | 1F.
+*
+********************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -7,48 +20,36 @@ int main()
 {
     float num1, num2;
     int operador;
-    char respuesta;
 
     num1 = 0;
     num2 = 0;
-    do
-    {
-    system("CLS");
+
+    menu(num1, num2);
 
     do
     {
-        system("CLS");
-        printf("\n \n MENU \n ------------------------ \n");
-        printf("\n 1 - INGRESAR EL 1ER OPERANDO (A=%f)\n 2 - INGRESAR EL 2DO OPERANDO (B=%f) \n 3 - SUMA (A+B) \n 4 - RESTA (A-B) \n 5 - MULTIPLICACION (A*B) \n 6 - DIVISION (A/B) \n 7 - FACTORIAL (A!) \n 8 - TODAS LAS OPERACIONES \n\n 9 - SALIR", num1, num2);
-        printf("\n \n OPCION: ");
-        scanf("%d", &operador);
-        system("CLS");
-        printf("\n \n MENU \n ------------------------ \n");
-        printf("\n 1 - INGRESAR EL 1ER OPERANDO (A=%f)\n 2 - INGRESAR EL 2DO OPERANDO (B=%f) \n 3 - SUMA (A+B) \n 4 - RESTA (A-B) \n 5 - MULTIPLICACION (A*B) \n 6 - DIVISION (A/B) \n 7 - FACTORIAL (A!) \n 8 - TODAS LAS OPERACIONES \n\n 9 - SALIR", num1, num2);
-        if(operador<=0 || operador>8)
-        {
-            system("CLS");
-        }
-
         switch (operador)
         {
             case 1:
                 num1 = primerNumero();
+                system("CLS");
+                menu(num1, num2);
             break;
             case 2:
                 num2 = segundoNumero();
+                system("CLS");
+                menu(num1, num2);
             break;
         }
-    }while(operador<=0 || operador==1 || operador==2 || operador>9);
 
-    calculo(operador, num1, num2);
+        calculo(operador, num1, num2);
 
-    printf("\n Desea operar de nuevo? (s|n): ");
-    respuesta = tolower(getch());
+        printf("\n \n OPCION: ");
+        scanf("%d", &operador);
+        system("CLS");
+        menu(num1, num2);
 
-    }while(respuesta == 's');
-
-    system("CLS");
+    }while(operador!=9);
 
     return 0;
 }
