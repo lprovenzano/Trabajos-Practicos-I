@@ -1,13 +1,18 @@
 /*******************************************************************
-*   Programa:Calculadora | Trabajo Práctico N° 1.
+*
+*   Programa:
+*   Calculadora | Trabajo Práctico N° 1.
 *
 *   Objetivo:
 *   Ingresar dos números (A^B) y realizar operaciones de
 *   suma, resta, multiplicacion, división y factorial.
 *
 *
-*   Version: 0.1 del 04 de abril de 2017.
-*   Autor: Luca Provenzano | 1F.
+*   Version:
+*   0.1 del 04 de abril de 2017.
+*
+*   Autor:
+*   Luca Provenzano | 1F.
 *
 ********************************************************************/
 
