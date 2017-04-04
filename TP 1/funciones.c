@@ -3,10 +3,10 @@
 #include "funciones.h"
 
 /**
- * @brief Muestra el menú en pantalla con los números ingresados por pantalla.
+ * @brief Vista del menu.
  * @param A - Primer operando
  * @param B - Segundo operando
- * @return Retorna valores A y B en el mismo menú.
+ * @return Retorna valores (A^B) en el mismo.
  */
 float menu(float a, float b)
 {
@@ -127,10 +127,10 @@ float factorial(float a)
 
 /**
  * @brief Realiza las operaciones de suma, resta, multiplicacion, division, factorial, todas las anteriores y la salida del programa.
- * @param A - opcion elegida por el usuario (Operacion)
+ * @param A - Opcion elegida por el usuario (Operacion)
  * @param B - Primer operando.
  * @param C - Segundo operando.
- * @return Retorna el total de cada operación.
+ * @return Retorna el total de cada operación según el caso elegido.
  */
 float calculo(int a, float b, float c)
 {

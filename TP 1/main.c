@@ -1,7 +1,7 @@
 /*******************************************************************
 *
 *   Programa:
-*   Calculadora | Trabajo Práctico N° 1.
+*   ~ Calculadora | Trabajo Práctico N° 1.
 *
 *   Objetivo:
 *   Ingresar dos números (A^B) y realizar operaciones de
