@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1496374791 source:c:\users\lprovenzano\desktop\tp_3_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"utn.h"
+
+1496374759 c:\users\lprovenzano\desktop\tp_3_cascara\funciones.h
+
+1495457545 c:\users\lprovenzano\desktop\tp_3_cascara\utn.h
+
+1496370397 source:c:\users\lprovenzano\desktop\tp_3_cascara\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1496371266 source:c:\users\lprovenzano\desktop\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"utn.h"
+
+1496454891 source:c:\users\lprovenzano\desktop\tp3-final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"utn.h"
+
+1496456289 c:\users\lprovenzano\desktop\tp3-final\funciones.h
+
+1495457545 c:\users\lprovenzano\desktop\tp3-final\utn.h
+
+1496456929 source:c:\users\lprovenzano\desktop\tp3-final\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"utn.h"
+
+1496370397 source:c:\users\lprovenzano\desktop\tp3-final\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
